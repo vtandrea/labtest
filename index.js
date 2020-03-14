@@ -1,4 +1,3 @@
-function plotData(){
     Plotly.d3.csv('https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv', function(err, rows){
 
         function unpack(rows, key) {
@@ -281,4 +280,3 @@ function plotData(){
 
         countrySelector.addEventListener('change', updateCountry, false);
     });
-}
